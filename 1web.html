@@ -3,24 +3,53 @@
   <head>
     <title>Note</title>
     <meta charset="utf-8">
+    <style>
+      a {
+        color: red;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        margin: 0px;
+      }
+      ul {
+        border-right: 1px solid black;
+        width: 70px;
+        margin: 0px;
+        padding: 10px;
+      }
+      body {
+        margin: 0px
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+    </style>
   </head>
   <body>
-    <h1><a href="my note.html">My note</a><h1>
-    <ul>
-      <li><a href="1web.html">Wep</a></li>
-      <li><a href="2mario.html">Mario</a></li>
-    </ul>
-    <h2>What can we do with '<u><a href="http://info.cern.ch" title="The origin of Web" target="_blank">Web</a></u>'?</h2>
-    <p style="margin-top:50px"><img src="MAMAMOO with SOJU.jpg" width="30%">
-      <br>I can make the ad for some item like <strong>SOJU</strong>
-      as above image on my web.</p>
-    <h3>Here are some detail pros and cons</h3>
-    <ol>
-      <li><a href="https://luyin.tistory.com/288" target="_blank" title="웹vs앱">versus app</a></li>
-      <li><a href="https://sjparkk-dev1og.tistory.com/83" target="_blank" title="웹vsCS">versus CS</a></li>
-      <li><a href="https://www.postposmo.com/ko/ventajas-de-un-sitio-web/" target="_blank" title="웹의 장점과 이점">
-        about time, money, and so on...</a></li>
-    </ol>
-
+    <h1><a href="my note.html">My note</a></h1>
+    <div id="grid">
+      <ul>
+        <li><a href="1web.html" style="color: green">Wep</a></li>
+        <li><a href="2mario.html">Mario</a></li>
+      </ul>
+      <div stlye="margin-left: 20px">
+        <h2>What can we do with '<a href="http://info.cern.ch" title="The origin of Web" target="_blank" style="text-decoration:underline">Web</a>'?</h2>
+        <p style="margin-top:50px"><img src="MAMAMOO with SOJU.jpg" width="30%">
+          <br>I can make the ad for some item like <strong>SOJU</strong>
+          as above image on my web.</p>
+        <h3>Here are some detail pros and cons</h3>
+        <ol>
+          <li><a href="https://luyin.tistory.com/288" target="_blank" title="웹vs앱">versus app</a></li>
+          <li><a href="https://sjparkk-dev1og.tistory.com/83" target="_blank" title="웹vsCS">versus CS</a></li>
+          <li><a href="https://www.postposmo.com/ko/ventajas-de-un-sitio-web/" target="_blank" title="웹의 장점과 이점">
+            about time, money, and so on...</a></li>
+        </ol>
+    </div>
+  </div>
   </body>
 </html>
